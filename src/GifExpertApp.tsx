@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import {AddCategory} from "./components/AddCategory";
 import {GifGrid} from "./components/GifGrid";
 
-const GifExpertApp = () => {
+const GifExpertApp = ({defaultCategory = []} : {defaultCategory? : string[]}) => {
 
-    const [categories, setCategories] = useState(['Shingeki no kyojin', 'Jujutsu Kaisen', 'Hellsing']);
+    const [categories, setCategories] = useState(defaultCategory);
 
     return (
         <div>

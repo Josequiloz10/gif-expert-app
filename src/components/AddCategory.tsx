@@ -8,7 +8,7 @@ export const AddCategory = ({
     const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setInputValue(e.currentTarget.value)
+        setInputValue(e.target.value)
     }
 
     const handleSubmit = (e: FormEvent) => {
